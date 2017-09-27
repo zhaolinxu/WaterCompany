@@ -224,10 +224,10 @@ setInterval(function(){
 		game.bank.money += totincome - totexpense;
 		id2w("money", sn2(game.bank.money));
 		if(totincome - totexpense<0){
-			id2w("income", "-$" + sn2((totincome - totexpense)*(-1)));
+			id2w("income", "- $" + sn2((totincome - totexpense)*(-1)));
 		}
 		else{
-			id2w("income", "+$" + sn2(totincome - totexpense));
+			id2w("income", "+ $" + sn2(totincome - totexpense));
 		}
 		game['stats']['totalearnedmoney'] = game['stats']['totalearnedmoney'] + totincome - totexpense;
 		if(game['stats']['totalearnedmoney']>=100000){
@@ -720,7 +720,7 @@ function Bank(a, b, c){
 				game.bank.money = game.bank.money - c;
 			}
 			else{
-				Error("Money printer broken", "Not enough money.");
+				Error("钱打印机坏了", "没有足够的资金。");
 			}
 		}
 		else{
@@ -748,7 +748,7 @@ function Bank(a, b, c){
 				game.bank.money = game.bank.money - c;
 			}
 			else{
-				Error("Money printer broken", "Not enough money.");
+				Error("钱打印机坏了", "没有足够的资金。");
 			}
 		}
 		else{

@@ -13,7 +13,7 @@
 			msieversion();
 		</script>
 		<meta charset="UTF-8">
-		<title>Water Company: Recoded</title>
+		<title>水公司: Recoded</title>
 		<!-- Start of StatCounter Code for Default Guide -->
 		<script type="text/javascript">
 			var sc_project=11393695; 
@@ -59,153 +59,153 @@
 		</style>
 	</head>
 	<body style="padding: 2.5px; max-width: 1150px; min-width: 975px;margin: 0 auto;padding: 10px 2px 10px 2px;">
-		<h2 style="color: #42a4f4;">Water Company: Recoded</h2> <span class="text-muted"> <h4>version 0.4</h4></span>
+		<h2 style="color: #42a4f4;">水公司: Recoded</h2> <span class="text-muted"> <h4>版本 0.4</h4></span>
 		<table class="table table-bordered" id="notfluid">
 			<tr>
-				<td>Money</td>
+				<td>钱</td>
 				<td>$<span id="money"></span> <span id="income"></span></td>
 				
 				
 			</tr>
 			<tr>
-				<th class="xs-6" colspan="4">Cold water</th>
-				<th class="xs-5" colspan="4">Hot water</th>
-				<th class="xs-1" colspan="4">Time</th>
+				<th class="xs-6" colspan="4">冷水</th>
+				<th class="xs-5" colspan="4">热水</th>
+				<th class="xs-1" colspan="4">时间</th>
 			</tr>
 			<tr>
-				<td>Water used</td>
+				<td>已用</td>
 				<td id="headercdused"></td>
-				<td>Water pumped</td>
+				<td>抽水</td>
 				<td id="headercdpumped"></td>
-				<td>Water used</td>
+				<td>已用</td>
 				<td id="headerhdused"></td>
-				<td>Water heated</td>
+				<td>水加热</td>
 				<td id="headerhdheated"></td>
-				<td>Hour</td>
+				<td>小时</td>
 				<td id="headerhour"></td>
-				<td>Day</td>
+				<td>天</td>
 				<td id="headerday"></td>
 			</tr>
 			<tr>
-				<td>Water stored</td>
+				<td>水存储</td>
 				<td id="headercdstored"></td>
-				<td>Water treated</td>
+				<td>水处理</td>
 				<td id="headercdtreated"></td>
-				<td colspan="2">Water pumped</td>
+				<td colspan="2">抽水</td>
 				<td colspan="2" id="headerhdpumped"></td>
-				<td>Month</td>
+				<td>月</td>
 				<td id="headermonth"></td>
-				<td>Year</td>
+				<td>年</td>
 				<td id="headeryear"></td>
 			</tr>
 		</table>
 		<ul class="nav nav-tabs">
-			<li class="active"><a href="#tab1" data-toggle="tab">City</a></li>
-			<li><a href="#tab2" data-toggle="tab">Upgrades</a></li>
-			<li><a href="#tab3" data-toggle="tab">Cold water</a></li>
-			<li id="hotwatertab"><a href="#tab4" data-toggle="tab">Hot water</a></li>
-		    <li id="banktab"><a href="#tab5" data-toggle="tab">Bank</a></li>
-		    <li><a href="#tab6" data-toggle="tab">Finance</a></li>
-		    <li><a href="#tab7" data-toggle="tab">FAQ</a></li>
-		    <li><a href="#tab8" data-toggle="tab">Tutorial</a></li>
-			<li class="pull-right"><a href="#tab9" data-toggle="tab">Options</a></li>
-			<li class="pull-right"><a href="https://github.com/Dimitar5555/WaterCompany/tree/master#change-log" target="_blank">Change log</a></li>
-			<li class="pull-right"><a href="#tab10" data-toggle="tab">About</a></li>
+			<li class="active"><a href="#tab1" data-toggle="tab">城市</a></li>
+			<li><a href="#tab2" data-toggle="tab">升级</a></li>
+			<li><a href="#tab3" data-toggle="tab">冷水</a></li>
+			<li id="hotwatertab"><a href="#tab4" data-toggle="tab">热水</a></li>
+		    <li id="banktab"><a href="#tab5" data-toggle="tab">银行</a></li>
+		    <li><a href="#tab6" data-toggle="tab">财政</a></li>
+		    <li><a href="#tab7" data-toggle="tab">问答</a></li>
+		    <li><a href="#tab8" data-toggle="tab">教程</a></li>
+			<li class="pull-right"><a href="#tab9" data-toggle="tab">选项</a></li>
+			<li class="pull-right"><a href="https://github.com/Dimitar5555/WaterCompany/tree/master#change-log" target="_blank">更新日志</a></li>
+			<li class="pull-right"><a href="#tab10" data-toggle="tab">关于</a></li>
 		</ul>
 		<div class="tab-content">
 			<div id="tab1" class="tab-pane active">
 				<table class="table table-bordered">
 					<tr>
-						<td colspan="2">City</td>
+						<td colspan="2">城市</td>
 						<td id="tab1city"></td>
 						<td>
 							<button class="btn btn-success" onclick="swal({title: 'City name', text: 'How will be your city called?', type: 'input', showCancelButton: false, closeOnConfirm: false, confirmButtonText: 'Name city'},
 function(inputValue){if (inputValue === false) return false;if (inputValue === '') {swal.showInputError('You need to write something!');return false}
-swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputValue;localStorage.setItem('save', JSON.stringify(game));id2w('tab1city', inputValue);});">Rename city</button>
+swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputValue;localStorage.setItem('save', JSON.stringify(game));id2w('tab1city', inputValue);});">重命名城市</button>
 						</td>
 					</tr>
 					<tr>
-						<th colspan="4">Population</th>
+						<th colspan="4">人口</th>
 					</tr>
 					<tr>
-						<td>Population</td>
+						<td>人口</td>
 						<td id="tab1population"></td>
-						<td>Population growth(montly)</td>
+						<td>人口增长(每月)</td>
 						<td id="tab1populationgrowth"></td>
 					</tr>
 					<tr>
-						<th colspan="4">Water coverage</th>
+						<th colspan="4">水覆盖</th>
 					</tr>
 					<tr>
-						<td>Population covered with cold water pipes</td>
+						<td>人口覆盖冷水管道</td>
 						<td id="tab1coldpipecoverage"></td>
-						<td>Cold water supplied</td>
+						<td>冷水供应</td>
 						<td id="tab1coldwatercoverage"></td>
 					</tr>
 					<tr>
-						<td>Population covered with hot water pipes</td>
+						<td>人口覆盖着热水管</td>
 						<td id="tab1hotpipecoverage"></td>
-						<td>Hot water supplied</td>
+						<td>热水供应</td>
 						<td id="tab1hotwatercoverage"></td>
 					</tr>
 					<tr>
-						<th colspan="4">Price & usage</th>
+						<th colspan="4">价格 & 使用</th>
 					</tr>
 					<tr>
-						<td>Cold water price</td>
+						<td>冷水价格</td>
 						<td id="tab1coldwaterprice"></td>
-						<td>Cold water usage</td>
+						<td>冷水使用</td>
 						<td id="tab1coldwaterusage"></td>
 					</tr>
 					<tr>
-						<td>Hot water price</td>
+						<td>热水价格</td>
 						<td id="tab1hotwaterprice"></td>
-						<td>Hot water usage</td>
+						<td>热水使用</td>
 						<td id="tab1hotwaterusage"></td>
 					</tr>
 				</table>
 			</div>
 			<div id="tab2" class="tab-pane">
 				<ul class="nav nav-stacked " style="font-size: 17px; float: left;">
-					<li><a>Cold water</a>
+					<li><a>冷水</a>
 						<ul>
-							<li><a data-toggle="tab" href="#upgradestabs1">Pumps</a></li>
-							<li><a data-toggle="tab" href="#upgradestabs2">Treatment plants</a></li>
-							<li><a data-toggle="tab" href="#upgradestabs3">Water storage</a></li>
-							<li><a data-toggle="tab" href="#upgradestabs4">Pipes</a></li>
+							<li><a data-toggle="tab" href="#upgradestabs1">水泵</a></li>
+							<li><a data-toggle="tab" href="#upgradestabs2">处理厂</a></li>
+							<li><a data-toggle="tab" href="#upgradestabs3">储水</a></li>
+							<li><a data-toggle="tab" href="#upgradestabs4">管道</a></li>
 						</ul>	
 						
 					</li>
-					<li><a>Hot water</a>
+					<li><a>热水</a>
 						<ul>
-							<li><a data-toggle="tab" href="#upgradestabs5">Pumps</a></li>
-							<li><a data-toggle="tab" href="#upgradestabs6">Heating plants</a></li>
-							<li><a data-toggle="tab" href="#upgradestabs7">Heat pipes</a></li>
+							<li><a data-toggle="tab" href="#upgradestabs5">水泵</a></li>
+							<li><a data-toggle="tab" href="#upgradestabs6">供热厂</a></li>
+							<li><a data-toggle="tab" href="#upgradestabs7">热管</a></li>
 						</ul>
 					</li>
-					<li><a data-toggle="tab" href="#upgradestabs8">Houses</a></li>
-					<li><a data-toggle="tab" href="#upgradestabs9">Bank</a></li>
+					<li><a data-toggle="tab" href="#upgradestabs8">房子</a></li>
+					<li><a data-toggle="tab" href="#upgradestabs9">银行</a></li>
 				</ul>
 				<div class="tab-content">
 					<div id="upgradestabs1" class="tab-pane active">
 						<table class="table">
 							<tr>
 								<td>
-									Increase production of cold water pumps by 10%<br />
-									Small cold water pump <span id="uptab1coldwaterprodb0"></span> m<sup>3</sup>-><span id="uptab1coldwaterproda0"></span> m<sup>3</sup><br />
-									Medium cold water pump <span id="uptab1coldwaterprodb1"></span> m<sup>3</sup>-><span id="uptab1coldwaterproda1"></span> m<sup>3</sup><br />
-									Big cold water pump <span id="uptab1coldwaterprodb2"></span> m<sup>3</sup>-><span id="uptab1coldwaterproda2"></span> m<sup>3</sup><br />
-									Very big cold water pump <span id="uptab1coldwaterprodb3"></span> m<sup>3</sup>-><span id="uptab1coldwaterproda3"></span> m<sup>3</sup>
+									提高冷水泵产量 10%<br />
+									小冷水泵 <span id="uptab1coldwaterprodb0"></span> m<sup>3</sup>-><span id="uptab1coldwaterproda0"></span> m<sup>3</sup><br />
+									中冷水泵 <span id="uptab1coldwaterprodb1"></span> m<sup>3</sup>-><span id="uptab1coldwaterproda1"></span> m<sup>3</sup><br />
+									大冷水泵 <span id="uptab1coldwaterprodb2"></span> m<sup>3</sup>-><span id="uptab1coldwaterproda2"></span> m<sup>3</sup><br />
+									超大冷水泵 <span id="uptab1coldwaterprodb3"></span> m<sup>3</sup>-><span id="uptab1coldwaterproda3"></span> m<sup>3</sup>
 								</td>
 								<td>
 									<button onclick="upgrade('coldwater', 'pumpprod', 1.1, 'coldwaterpumpprod', 1.2, 4)" class="btn btn-success">$<span id="coldwaterpumpprod"></span><br /></button>
 								</td>
 								<td>
-									Decrease operating cost of cold water pumps by 10%<br />
-									Small cold water pump $<span id="uptab1coldwatercostb0"></span>->$<span id="uptab1coldwatercosta0"></span><br />
-									Medium cold water pump $<span id="uptab1coldwatercostb1"></span>->$<span id="uptab1coldwatercosta1"></span><br />
-									Big cold water pump $<span id="uptab1coldwatercostb2"></span>->$<span id="uptab1coldwatercosta2"></span><br />
-									Very big cold water pump $<span id="uptab1coldwatercostb3"></span>->$<span id="uptab1coldwatercosta3"></span>
+									降低经营成本冷水泵 10%<br />
+									小冷水泵 $<span id="uptab1coldwatercostb0"></span> -> $<span id="uptab1coldwatercosta0"></span><br />
+									中冷水泵 $<span id="uptab1coldwatercostb1"></span> -> $<span id="uptab1coldwatercosta1"></span><br />
+									大冷水泵 $<span id="uptab1coldwatercostb2"></span> -> $<span id="uptab1coldwatercosta2"></span><br />
+									超大冷水泵 $<span id="uptab1coldwatercostb3"></span> -> $<span id="uptab1coldwatercosta3"></span>
 								</td>
 								<td>
 									<button onclick="upgrade('coldwater', 'pumpcost', 0.9, 'coldwaterpumpcost', 1.25, 4)" class="btn btn-success">$<span id="coldwaterpumpcost"></span></button>
@@ -217,20 +217,20 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						<table class="table">
 							<tr>
 								<td>
-									Increase productin of treatment plants by 10%<br />
-									Small treatment plant <span id="uptab2coldwaterprodb0"></span> m<sup>3</sup>-><span id="uptab2coldwaterproda0"></span> m<sup>3</sup><br />
-								    Medium treatment plant <span id="uptab2coldwaterprodb1"></span> m<sup>3</sup>-><span id="uptab2coldwaterproda1"></span> m<sup>3</sup><br />
-								    Big treatment plant <span id="uptab2coldwaterprodb2"></span> m<sup>3</sup>-><span id="uptab2coldwaterproda2"></span> m<sup>3</sup><br />
-								    Very bigtreatment plant <span id="uptab2coldwaterprodb3"></span> m<sup>3</sup>-><span id="uptab2coldwaterproda3"></span> m<sup>3</sup>
+									增加处理厂的生产 10%<br />
+									小处理厂 <span id="uptab2coldwaterprodb0"></span> m<sup>3</sup>-><span id="uptab2coldwaterproda0"></span> m<sup>3</sup><br />
+								    中处理厂 <span id="uptab2coldwaterprodb1"></span> m<sup>3</sup>-><span id="uptab2coldwaterproda1"></span> m<sup>3</sup><br />
+								    大处理厂 <span id="uptab2coldwaterprodb2"></span> m<sup>3</sup>-><span id="uptab2coldwaterproda2"></span> m<sup>3</sup><br />
+								    超大处理厂 <span id="uptab2coldwaterprodb3"></span> m<sup>3</sup>-><span id="uptab2coldwaterproda3"></span> m<sup>3</sup>
 								</td>
 								<td>
 									<button onclick="upgrade('coldwater', 'treatmentplantprod', 1.1, 'coldwatertreatmentplantprod', 1.2, 4)" class="btn btn-success">$<span id="coldwatertreatmentplantprod"></span></button>								</td>
 								<td>
-									Decrease operating cost of treatment plants by 10%<br />
-									Small treatment plant   $<span id="uptab2coldwatercostb0"></span>->$<span id="uptab2coldwatercosta0"></span><br />
-									Medium treatment plant  $<span id="uptab2coldwatercostb1"></span>->$<span id="uptab2coldwatercosta1"></span><br />
-									Big treatment plant     $<span id="uptab2coldwatercostb2"></span>->$<span id="uptab2coldwatercosta2"></span><br />
-									Very bigtreatment plant $<span id="uptab2coldwatercostb3"></span>->$<span id="uptab2coldwatercosta3"></span>
+									降低处理厂经营成本 10%<br />
+									小处理厂 $<span id="uptab2coldwatercostb0"></span> -> $<span id="uptab2coldwatercosta0"></span><br />
+									中处理厂 $<span id="uptab2coldwatercostb1"></span> -> $<span id="uptab2coldwatercosta1"></span><br />
+									大处理厂 $<span id="uptab2coldwatercostb2"></span> -> $<span id="uptab2coldwatercosta2"></span><br />
+									超大处理厂 $<span id="uptab2coldwatercostb3"></span> -> $<span id="uptab2coldwatercosta3"></span>
 								</td>
 								<td>
 									<button onclick="upgrade('coldwater', 'treatmentplantcost', 0.9, 'coldwatertreatmentplantcost', 1.25, 4)" class="btn btn-success">$<span id="coldwatertreatmentplantcost"></span></button>
@@ -242,21 +242,21 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						<table class="table">
 							<tr>
 								<td>
-									Increase maximum storage of storage units by 10%<br />
-									Small storage unit    <span id="uptab3coldwaterprodb0"></span> m<sup>3</sup>-><span id="uptab3coldwaterproda0"></span> m<sup>3</sup><br />
-									Medium storage unit   <span id="uptab3coldwaterprodb1"></span> m<sup>3</sup>-><span id="uptab3coldwaterproda1"></span> m<sup>3</sup><br />
-									Big storage unit      <span id="uptab3coldwaterprodb2"></span> m<sup>3</sup>-><span id="uptab3coldwaterproda2"></span> m<sup>3</sup><br />
-									Very big storage unit <span id="uptab3coldwaterprodb3"></span> m<sup>3</sup>-><span id="uptab3coldwaterproda3"></span> m<sup>3</sup>
+									增加存储的最大存储空间 10%<br />
+									小存储空间    <span id="uptab3coldwaterprodb0"></span> m<sup>3</sup>-><span id="uptab3coldwaterproda0"></span> m<sup>3</sup><br />
+									中存储空间   <span id="uptab3coldwaterprodb1"></span> m<sup>3</sup>-><span id="uptab3coldwaterproda1"></span> m<sup>3</sup><br />
+									大存储空间      <span id="uptab3coldwaterprodb2"></span> m<sup>3</sup>-><span id="uptab3coldwaterproda2"></span> m<sup>3</sup><br />
+									超大存储空间 <span id="uptab3coldwaterprodb3"></span> m<sup>3</sup>-><span id="uptab3coldwaterproda3"></span> m<sup>3</sup>
 								</td>
 								<td>
 									<button onclick="upgrade('coldwater', 'storageprod', 1.1, 'coldwaterstoragemax', 1.2, 4)" class="btn btn-success">$<span id="coldwaterstoragemax"></span></button>
 								</td>
 								<td>
-									Decrease operating cost of storage units by 10%<br />
-									Small storage unit    $<span id="uptab3coldwatercostb0"></span>->$<span id="uptab3coldwatercosta0"></span><br />
-									Medium storage unit   $<span id="uptab3coldwatercostb1"></span>->$<span id="uptab3coldwatercosta1"></span><br />
-									Big storage unit      $<span id="uptab3coldwatercostb2"></span>->$<span id="uptab3coldwatercosta2"></span><br />
-									Very big storage unit $<span id="uptab3coldwatercostb3"></span>->$<span id="uptab3coldwatercosta3"></span>
+									降低存储空间经营成本 10%<br />
+									小存储空间    $<span id="uptab3coldwatercostb0"></span> -> $<span id="uptab3coldwatercosta0"></span><br />
+									中存储空间   $<span id="uptab3coldwatercostb1"></span> -> $<span id="uptab3coldwatercosta1"></span><br />
+									大存储空间      $<span id="uptab3coldwatercostb2"></span> -> $<span id="uptab3coldwatercosta2"></span><br />
+									超大存储空间 $<span id="uptab3coldwatercostb3"></span> -> $<span id="uptab3coldwatercosta3"></span>
 								</td>
 								<td>
 									<button onclick="upgrade('coldwater', 'storagecost', 0.9, 'coldwaterstoragecost', 1.25, 4)" class="btn btn-success">$<span id="coldwaterstoragecost"></span></button>
@@ -268,15 +268,15 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						<table class="table">
 							<tr>
 								<td>
-									Decrease the price for buying pipes by 2.5%<br />
-									Buying price $<span id="uptab4coldwaterpipesbuyb"></span>->$<span id="uptab4coldwaterpipesbuya"></span>
+									降低购买管道的价格 2.5%<br />
+									购买价格 $<span id="uptab4coldwaterpipesbuyb"></span> -> $<span id="uptab4coldwaterpipesbuya"></span>
 								</td>
 								<td>
 									<button onclick="decpipeprice('coldwater', 'coldwaterpipebuy', 0)" class="btn btn-success">$<span id="coldwaterpipebuy"></span></button>
 								</td>
 								<td>
-									Decrease the price for placing pipes by 2.5%<br />
-									Placing pipes $<span id="uptab4coldwaterpipesplaceb"></span>->$<span id="uptab4coldwaterpipesplacea"></span>
+									降低放置管道的价格 2.5%<br />
+									放置管道价格 $<span id="uptab4coldwaterpipesplaceb"></span> -> $<span id="uptab4coldwaterpipesplacea"></span>
 								</td>
 								<td>
 									<button onclick="decpipeprice('coldwater', 'coldwaterpipeplace', 1)" class="btn btn-success">$<span id="coldwaterpipeplace"></span></button>
@@ -288,21 +288,21 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						<table class="table">
 							<tr>
 								<td>
-									Increase production of hot water pumps by 10%<br />
-									hot water pump <span id="uptab5hotwaterprodb0"></span> m<sup>3</sup>-><span id="uptab5hotwaterproda0"></span> m<sup>3</sup><br />
-									hot water pump <span id="uptab5hotwaterprodb1"></span> m<sup>3</sup>-><span id="uptab5hotwaterproda1"></span> m<sup>3</sup><br />
-									hot water pump <span id="uptab5hotwaterprodb2"></span> m<sup>3</sup>-><span id="uptab5hotwaterproda2"></span> m<sup>3</sup><br />
-									hot water pump <span id="uptab5hotwaterprodb3"></span> m<sup>3</sup>-><span id="uptab5hotwaterproda3"></span> m<sup>3</sup>
+									增加热水泵生产 10%<br />
+									热水泵 <span id="uptab5hotwaterprodb0"></span> m<sup>3</sup>-><span id="uptab5hotwaterproda0"></span> m<sup>3</sup><br />
+									热水泵 <span id="uptab5hotwaterprodb1"></span> m<sup>3</sup>-><span id="uptab5hotwaterproda1"></span> m<sup>3</sup><br />
+									热水泵 <span id="uptab5hotwaterprodb2"></span> m<sup>3</sup>-><span id="uptab5hotwaterproda2"></span> m<sup>3</sup><br />
+									热水泵 <span id="uptab5hotwaterprodb3"></span> m<sup>3</sup>-><span id="uptab5hotwaterproda3"></span> m<sup>3</sup>
 								</td>
 								<td>
 									<button onclick="upgrade('hotwater', 'pumpprod', 1.1, 'hotwaterpumpprod', 1.2, 4)" class="btn btn-success">$<span id="hotwaterpumpprod"></span></button></button>
 								</td>
 								<td>
-									Decrease operating cost of hot water pumps by 10%<br />
-									hot water pump $<span id="uptab5hotwatercostb0"></span>->$<span id="uptab5hotwatercosta0"></span><br />
-									hot water pump $<span id="uptab5hotwatercostb1"></span>->$<span id="uptab5hotwatercosta1"></span><br />
-									hot water pump $<span id="uptab5hotwatercostb2"></span>->$<span id="uptab5hotwatercosta2"></span><br />
-									hot water pump $<span id="uptab5hotwatercostb3"></span>->$<span id="uptab5hotwatercosta3"></span>
+									降低热水泵经营成本 10%<br />
+									热水泵 $<span id="uptab5hotwatercostb0"></span> -> $<span id="uptab5hotwatercosta0"></span><br />
+									热水泵 $<span id="uptab5hotwatercostb1"></span> -> $<span id="uptab5hotwatercosta1"></span><br />
+									热水泵 $<span id="uptab5hotwatercostb2"></span> -> $<span id="uptab5hotwatercosta2"></span><br />
+									热水泵 $<span id="uptab5hotwatercostb3"></span> -> $<span id="uptab5hotwatercosta3"></span>
 								</td>
 								<td>
 									<button onclick="upgrade('hotwater', 'pumpcost', 0.9, 'hotwaterpumpcost', 1.25, 4)" class="btn btn-success">$<span id="hotwaterpumpcost"></span></button>
@@ -314,21 +314,21 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						<table class="table">
 							<tr>
 								<td>
-									Increase production of water heating plants by 10%<br />
-                                    heating plant <span id="uptab6hotwaterprodb0"></span> m<sup>3</sup>-><span id="uptab6hotwaterproda0"></span> m<sup>3</sup><br />
-                                    heating plant <span id="uptab6hotwaterprodb1"></span> m<sup>3</sup>-><span id="uptab6hotwaterproda1"></span> m<sup>3</sup><br />
-                                    heating plant <span id="uptab6hotwaterprodb2"></span> m<sup>3</sup>-><span id="uptab6hotwaterproda2"></span> m<sup>3</sup><br />
-									heating plant <span id="uptab6hotwaterprodb3"></span> m<sup>3</sup>-><span id="uptab6hotwaterproda3"></span> m<sup>3</sup>
+									增加供热厂的生产 10%<br />
+                                    供热厂 <span id="uptab6hotwaterprodb0"></span> m<sup>3</sup>-><span id="uptab6hotwaterproda0"></span> m<sup>3</sup><br />
+                                    供热厂 <span id="uptab6hotwaterprodb1"></span> m<sup>3</sup>-><span id="uptab6hotwaterproda1"></span> m<sup>3</sup><br />
+                                    供热厂 <span id="uptab6hotwaterprodb2"></span> m<sup>3</sup>-><span id="uptab6hotwaterproda2"></span> m<sup>3</sup><br />
+									供热厂 <span id="uptab6hotwaterprodb3"></span> m<sup>3</sup>-><span id="uptab6hotwaterproda3"></span> m<sup>3</sup>
 								</td>
 								<td>
 									<button onclick="upgrade('hotwater', 'heatingplantprod', 1.1, 'hotwaterheatingplantprod', 1.2, 4)" class="btn btn-success">$<span id="hotwaterheatingplantprod"></span></button>
 								</td>
 								<td>
-									Decrease operating cost of water heating plants by 10%<br />
-									heating plant $<span id="uptab6hotwatercostb0"></span>->$<span id="uptab6hotwatercosta0"></span><br />
-									heating plant $<span id="uptab6hotwatercostb1"></span>->$<span id="uptab6hotwatercosta1"></span><br />
-									heating plant $<span id="uptab6hotwatercostb2"></span>->$<span id="uptab6hotwatercosta2"></span><br />
-									heating plant $<span id="uptab6hotwatercostb3"></span>->$<span id="uptab6hotwatercosta3"></span>
+									降低供热厂的经营成本 10%<br />
+									供热厂 $<span id="uptab6hotwatercostb0"></span> -> $<span id="uptab6hotwatercosta0"></span><br />
+									供热厂 $<span id="uptab6hotwatercostb1"></span> -> $<span id="uptab6hotwatercosta1"></span><br />
+									供热厂 $<span id="uptab6hotwatercostb2"></span> -> $<span id="uptab6hotwatercosta2"></span><br />
+									供热厂 $<span id="uptab6hotwatercostb3"></span> -> $<span id="uptab6hotwatercosta3"></span>
 								</td>
 								<td>
 									<button onclick="upgrade('hotwater', 'heatingplantcost', 0.9, 'hotwaterheatingplantcost', 1.25, 4)" class="btn btn-success">$<span id="hotwaterheatingplantcost"></span></button>
@@ -340,15 +340,15 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						<table class="table">
 							<tr>
 								<td>
-									Decrease price for buying hot water pipes by 5%<br />
-									Buying hot water pipes $<span id="uptab7hotwaterpricebuyb"></span>->$<span id="uptab7hotwaterpricebuya"></span>
+									降低购买热水管的价格 5%<br />
+									购买热水管价格 $<span id="uptab7hotwaterpricebuyb"></span> -> $<span id="uptab7hotwaterpricebuya"></span>
 								</td>
 								<td>
 									<button onclick="decpipeprice('hotwater', 'hotwaterpipebuy', 0)" class="btn btn-success">$<span id="hotwaterpipebuy"></span></button>
 								</td>
 								<td>
-									Decrease price for placing hot water pipes by 5%<br />
-									Placing hot water pipes $<span id="uptab7hotwaterpriceplaceb"></span>->$<span id="uptab7hotwaterpriceplacea"></span>
+									降低放置热水管的价格 5%<br />
+									放置热水管的价格 $<span id="uptab7hotwaterpriceplaceb"></span> -> $<span id="uptab7hotwaterpriceplacea"></span>
 								</td>
 								<td>
 									<button onclick="decpipeprice('hotwater', 'hotwaterpipeplace', 1)" class="btn btn-success">$<span id="hotwaterpipeplace"></span></button>
@@ -359,20 +359,20 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 					<div id="upgradestabs8" class="tab-pane">
 						<table class="table">
 							<tr>
-								<th colspan="2">Cold water</th>
-								<th colspan="2">Hot water</th>
+								<th colspan="2">冷水</th>
+								<th colspan="2">热水</th>
 							</tr>
 							<tr>
 								<td>
-									Increase price of cold water by 5%<br />
-									Price of cold water $<span id="uptab8coldwaterpriceb"></span>->$<span id="uptab8coldwaterpricea"></span>
+									提高冷水价格 5%<br />
+									冷水价格 $<span id="uptab8coldwaterpriceb"></span> -> $<span id="uptab8coldwaterpricea"></span>
 								</td>
 								<td>
 									<button onclick="upgrade('coldwater', 'waterprice', 1.05, 'coldwaterprice', 1.25, 1)" class="btn btn-success">$<span id="coldwaterprice"></span></button>
 								</td>
 								<td>
-									Increase price of hot water by 5%<br />
-									Price of hot water $<span id="uptab8hotwaterpriceb"></span>->$<span id="uptab8hotwaterpricea"></span>
+									提高热水价格 5%<br />
+									热水价格 $<span id="uptab8hotwaterpriceb"></span> -> $<span id="uptab8hotwaterpricea"></span>
 								</td>
 								<td>
 									<button onclick="upgrade('hotwater', 'waterprice', 1.05, 'hotwaterprice', 1.25, 1)" class="btn btn-success">$<span id="hotwaterprice"></span></button>
@@ -380,15 +380,15 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 							</tr>
 							<tr>
 								<td>
-									Increase the use of cold water by 2.5%<br />
-									Cold water used per house <span id="uptab8coldwaterusedb"></span> m<sup>3</sup>-><span id="uptab8coldwateruseda"></span> m<sup>3</sup>
+									增加冷水使用量 2.5%<br />
+									每个房子使用冷水 <span id="uptab8coldwaterusedb"></span> m<sup>3</sup>-><span id="uptab8coldwateruseda"></span> m<sup>3</sup>
 								</td>
 								<td>
 									<button onclick="upgrade('coldwater', 'waterperhouse', 1.025, 'coldwaterperhouse', 1.25, 1)" class="btn btn-success">$<span id="coldwaterperhouse"></span></button>
 								</td>
 								<td>
-									Increase the use of hot water by 2.5%<br />
-									Hot water used per house <span id="uptab8hotwaterusedb"></span> m<sup>3</sup>-><span id="uptab8hotwateruseda"></span> m<sup>3</sup>
+									增加热水使用量 2.5%<br />
+									每个房子使用热水 <span id="uptab8hotwaterusedb"></span> m<sup>3</sup>-><span id="uptab8hotwateruseda"></span> m<sup>3</sup>
 								</td>
 								<td>
 									<button onclick="upgrade('hotwater', 'waterperhouse', 1.025, 'hotwaterperhouse', 1.25, 1)" class="btn btn-success">$<span id="hotwaterperhouse"></span></button>
@@ -396,8 +396,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 							</tr>
 							<tr>
 								<td colspan="2">
-									Increase the rate of building new houses by 0.1%(max 10%)<br />
-									Rate of building houses <span id="uptab8houserateb"></span>-><span id="uptab8houseratea"></span>
+									将新房建造效率提高0.1％（最高10％）<br />
+									建房率 <span id="uptab8houserateb"></span>-><span id="uptab8houseratea"></span>
 								</td>
 								<td colspan="2">
 									<button onclick="increasepopincrease()" class="btn btn-success">$<span id="houserate"></span></button>
@@ -409,15 +409,15 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						<table class="table">
 							<tr>
 								<td>
-									Increase interest rate by 0.5%(max 25%)<br />
-									Interest rate <span id="uptab9intb"></span>%-><span id="uptab9inta"></span>%
+									增加0.5％（最高25％）<br />
+									利率 <span id="uptab9intb"></span>%-><span id="uptab9inta"></span>%
 								</td>
 								<td>
 									<button onclick="increaseinterest();" class="btn btn-success">$<span id="balanceinterestrate"></span></button>
 								</td>
 								<td>
-									Increase maximum loan by 100%<br />
-									Maximum loan $<span id="uptab9maxloanb"></span>->$<span id="uptab9maxloana"></span>
+									增加最大贷款数量 100%<br />
+									最高贷款 $<span id="uptab9maxloanb"></span> -> $<span id="uptab9maxloana"></span>
 								</td>
 								<td>
 									<button onclick="increasemaxloan()" class="btn btn-success">$<span id="maxloan"></span></button>
@@ -429,18 +429,18 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 			</div>
 			<div id="tab3" class="tab-pane">
 				<ul class="nav nav-stacked" style="font-size: 17px;">
-					<li class="active"><a data-toggle="tab" href="#watertab1">Water pumps</a></li>
-					<li><a data-toggle="tab" href="#watertab2">Water storage</a></li>
-					<li><a data-toggle="tab" href="#watertab3">Treatment plants</a></li>
-					<li><a data-toggle="tab" href="#watertab4">Pipes</a></li>
+					<li class="active"><a data-toggle="tab" href="#watertab1">水泵</a></li>
+					<li><a data-toggle="tab" href="#watertab2">储水</a></li>
+					<li><a data-toggle="tab" href="#watertab3">处理厂</a></li>
+					<li><a data-toggle="tab" href="#watertab4">管道</a></li>
 				</ul>
 				<div class="tab-content">
 					<div id="watertab1" class="tab-pane active">
-						<p>Without pumps you can't supply water to the homes and you won't get money. They are pretty expensive so think before you buy one.</p>
+						<p>没有泵，你不能给家里供水，你不会得到钱。 买一个以前你认为他们是相当昂贵的。</p>
 						<br />
 						<table>
 							<tr>
-								<td>Buy</td>
+								<td>购买</td>
 								<td class="btn-group">
 									<button onclick="refnumber('watertab1number', 1, 'watertab1number', 'watertab1total', 'coldwater', 'pumpprice')" class="btn btn-info">1</button>
 									<button onclick="refnumber('watertab1number', 10, 'watertab1number', 'watertab1total', 'coldwater', 'pumpprice')" class="btn btn-info">10</button>
@@ -451,7 +451,7 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								</td>
 							</tr>
 							<tr>
-								<td>Sell</td>
+								<td>出售</td>
 								<td class="btn-group">
 									<button onclick="refnumber('watertab1numbersell', 1, 'watertab1numbersell', 'watertab1totalsell', 'coldwater', 'pumpprice')" class="btn btn-info">1</button>
 									<button onclick="refnumber('watertab1numbersell', 10, 'watertab1numbersell', 'watertab1totalsell', 'coldwater', 'pumpprice')" class="btn btn-info">10</button>
@@ -464,21 +464,21 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						</table>
 						<table class="table">
 							<tr>
-								<th>Pump</th>
-								<th>Price</th>
+								<th>水泵</th>
+								<th>价格</th>
 								<th></th>
-								<th>Owned</th>
-								<th>Water pumped</th>
-								<th>Total pumped water</th>
-								<th>Operating cost</th>
-								<th>Total operating cost</th>
+								<th>拥有</th>
+								<th>Water泵ed</th>
+								<th>Total泵ed water</th>
+								<th>运营成本</th>
+								<th>总运营成本</th>
 							</tr>
 							<tr>
 								<td></td>
 								<td id="tab3pprice0"></td>
 								<td>
-									<button onclick="buy('coldwater', 'pump', watertab1number, 0)" class="btn btn-success">Buy <span id="watertab1number0"></span> - $<span id="watertab1total0"></span></button>
-									<button onclick="sell('coldwater', 'pump', watertab1numbersell, 0)" class="btn btn-danger">Sell <span id="watertab1numbersell0"></span> - $<span id="watertab1totalsell0"></span></button>
+									<button onclick="buy('coldwater', 'pump', watertab1number, 0)" class="btn btn-success">购买 <span id="watertab1number0"></span> - $<span id="watertab1total0"></span></button>
+									<button onclick="sell('coldwater', 'pump', watertab1numbersell, 0)" class="btn btn-danger">出售 <span id="watertab1numbersell0"></span> - $<span id="watertab1totalsell0"></span></button>
 								</td>
 								<td id="tab3powned0"></td>
 								<td id="tab3pprodu0"></td>
@@ -490,8 +490,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab3pprice1"></td>
 								<td>
-									<button onclick="buy('coldwater', 'pump', watertab1number, 1)" class="btn btn-success">Buy <span id="watertab1number1"></span> - $<span id="watertab1total1"></span></button>
-									<button onclick="sell('coldwater', 'pump', watertab1numbersell, 1)" class="btn btn-danger">Sell <span id="watertab1numbersell1"></span> - $<span id="watertab1totalsell1"></span></button>
+									<button onclick="buy('coldwater', 'pump', watertab1number, 1)" class="btn btn-success">购买 <span id="watertab1number1"></span> - $<span id="watertab1total1"></span></button>
+									<button onclick="sell('coldwater', 'pump', watertab1numbersell, 1)" class="btn btn-danger">出售 <span id="watertab1numbersell1"></span> - $<span id="watertab1totalsell1"></span></button>
 								</td>
 								<td id="tab3powned1"></td>
 								<td id="tab3pprodu1"></td>
@@ -503,8 +503,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab3pprice2"></td>
 								<td>
-									<button onclick="buy('coldwater', 'pump', watertab1number, 2)" class="btn btn-success">Buy <span id="watertab1number2"></span> - $<span id="watertab1total2"></span></button>
-									<button onclick="sell('coldwater', 'pump', watertab1numbersell, 2)" class="btn btn-danger">Sell <span id="watertab1numbersell2"></span> - $<span id="watertab1totalsell2"></span></button>
+									<button onclick="buy('coldwater', 'pump', watertab1number, 2)" class="btn btn-success">购买 <span id="watertab1number2"></span> - $<span id="watertab1total2"></span></button>
+									<button onclick="sell('coldwater', 'pump', watertab1numbersell, 2)" class="btn btn-danger">出售 <span id="watertab1numbersell2"></span> - $<span id="watertab1totalsell2"></span></button>
 								</td>
 								<td id="tab3powned2"></td>
 								<td id="tab3pprodu2"></td>
@@ -516,8 +516,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab3pprice3"></td>
 								<td>
-									<button onclick="buy('coldwater', 'pump', watertab1number, 3)" class="btn btn-success">Buy <span id="watertab1number3"></span> - $<span id="watertab1total3"></span></button>
-									<button onclick="sell('coldwater', 'pump', watertab1numbersell, 3)" class="btn btn-danger">Sell <span id="watertab1numbersell3"></span> - $<span id="watertab1totalsell3"></span></button>
+									<button onclick="buy('coldwater', 'pump', watertab1number, 3)" class="btn btn-success">购买 <span id="watertab1number3"></span> - $<span id="watertab1total3"></span></button>
+									<button onclick="sell('coldwater', 'pump', watertab1numbersell, 3)" class="btn btn-danger">出售 <span id="watertab1numbersell3"></span> - $<span id="watertab1totalsell3"></span></button>
 								</td>
 								<td id="tab3powned3"></td>
 								<td id="tab3pprodu3"></td>
@@ -528,11 +528,11 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						</table>
 					</div>
 					<div id="watertab2" class="tab-pane">
-						<p>Water storage is used to store water like water towers. Whene there is too much water, it is stored if possible. When there is a shortage of water, the water from the tower is used.</p>
+						<p>储水用于储存水如水塔。 当水分过多时，如有可能存放。 当水不足时，使用塔的水。</p>
 						<br />
 						<table>
 							<tr>
-								<td>Buy</td>
+								<td>购买</td>
 								<td class="btn-group">
 									<button onclick="refnumber('watertab2number', 1, 'watertab2number', 'watertab2total', 'coldwater', 'storageprice')" class="btn btn-info">1</button>
 									<button onclick="refnumber('watertab2number', 10, 'watertab2number', 'watertab2total', 'coldwater', 'storageprice')" class="btn btn-info">10</button>
@@ -543,7 +543,7 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								</td>
 							</tr>
 							<tr>
-								<td>Sell</td>
+								<td>出售</td>
 								<td class="btn-group">
 									<button onclick="refnumber('watertab2numbersell', 1, 'watertab2numbersell', 'watertab2totalsell', 'coldwater', 'storageprice')" class="btn btn-info">1</button>
 									<button onclick="refnumber('watertab2numbersell', 10, 'watertab2numbersell', 'watertab2totalsell', 'coldwater', 'storageprice')" class="btn btn-info">10</button>
@@ -556,21 +556,21 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						</table>
 						<table class="table">
 							<tr>
-								<th>Storage unit</th>
-								<th>Price</th>
+								<th>存储单元</th>
+								<th>价格</th>
 								<th></th>
-								<th>Owned</th>
-								<th>Water stored</th>
-								<th>Total water stored</th>
-								<th>Operating cost</th>
-								<th>Total operating cost</th>
+								<th>拥有</th>
+								<th>水存储</th>
+								<th>总水存储</th>
+								<th>运营成本</th>
+								<th>总运营成本</th>
 							</tr>
 							<tr>
 								<td></td>
 								<td id="tab3sprice0"></td>
 								<td>
-									<button onclick="buy('coldwater', 'storage', watertab2number, 0)" class="btn btn-success">Buy <span id="watertab2number0"></span> - $<span id="watertab2total0"></span></button>
-									<button onclick="sell('coldwater', 'storage', watertab2numbersell, 0)" class="btn btn-danger">Sell <span id="watertab2numbersell0"></span> - $<span id="watertab2totalsell0"></span></button>
+									<button onclick="buy('coldwater', 'storage', watertab2number, 0)" class="btn btn-success">购买 <span id="watertab2number0"></span> - $<span id="watertab2total0"></span></button>
+									<button onclick="sell('coldwater', 'storage', watertab2numbersell, 0)" class="btn btn-danger">出售 <span id="watertab2numbersell0"></span> - $<span id="watertab2totalsell0"></span></button>
 								</td>
 								<td id="tab3sowned0"></td>
 								<td id="tab3sprodu0"></td>
@@ -582,8 +582,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab3sprice1"></td>
 								<td>
-									<button onclick="buy('coldwater', 'storage', watertab2number, 1)" class="btn btn-success">Buy <span id="watertab2number1"></span> - $<span id="watertab2total1"></span></button>
-									<button onclick="sell('coldwater', 'storage', watertab2numbersell, 1)" class="btn btn-danger">Sell <span id="watertab2numbersell1"></span> - $<span id="watertab2totalsell1"></span></button>
+									<button onclick="buy('coldwater', 'storage', watertab2number, 1)" class="btn btn-success">购买 <span id="watertab2number1"></span> - $<span id="watertab2total1"></span></button>
+									<button onclick="sell('coldwater', 'storage', watertab2numbersell, 1)" class="btn btn-danger">出售 <span id="watertab2numbersell1"></span> - $<span id="watertab2totalsell1"></span></button>
 								</td>
 								<td id="tab3sowned1"></td>
 								<td id="tab3sprodu1"></td>
@@ -595,8 +595,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab3sprice2"></td>
 								<td>
-									<button onclick="buy('coldwater', 'storage', watertab2number, 2)" class="btn btn-success">Buy <span id="watertab2number2"></span> - $<span id="watertab2total2"></span></button>
-									<button onclick="sell('coldwater', 'storage', watertab2numbersell, 2)" class="btn btn-danger">Sell <span id="watertab2numbersell2"></span> - $<span id="watertab2totalsell2"></span></button>
+									<button onclick="buy('coldwater', 'storage', watertab2number, 2)" class="btn btn-success">购买 <span id="watertab2number2"></span> - $<span id="watertab2total2"></span></button>
+									<button onclick="sell('coldwater', 'storage', watertab2numbersell, 2)" class="btn btn-danger">出售 <span id="watertab2numbersell2"></span> - $<span id="watertab2totalsell2"></span></button>
 								</td>
 								<td id="tab3sowned2"></td>
 								<td id="tab3sprodu2"></td>
@@ -608,8 +608,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab3sprice3"></td>
 								<td>
-									<button onclick="buy('coldwater', 'storage', watertab2number, 3)" class="btn btn-success">Buy <span id="watertab2number3"></span> - $<span id="watertab2total3"></span></button>
-									<button onclick="sell('coldwater', 'storage', watertab2numbersell, 3)" class="btn btn-danger">Sell <span id="watertab2numbersell3"></span> - $<span id="watertab2totalsell3"></span></button>
+									<button onclick="buy('coldwater', 'storage', watertab2number, 3)" class="btn btn-success">购买 <span id="watertab2number3"></span> - $<span id="watertab2total3"></span></button>
+									<button onclick="sell('coldwater', 'storage', watertab2numbersell, 3)" class="btn btn-danger">出售 <span id="watertab2numbersell3"></span> - $<span id="watertab2totalsell3"></span></button>
 								</td>
 								<td id="tab3sowned3"></td>
 								<td id="tab3sprodu3"></td>
@@ -620,11 +620,11 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						</table>
 					</div>
 					<div id="watertab3" class="tab-pane">
-						<p>Thanks to the treatment plant you don't need to pay fines for dirty water being disposed. Be aware that for every 1000 m3 you dispose in river you need to pay $100.</p>
+						<p>Thanks to the处理厂 you don't need to pay fines for dirty water being disposed. Be aware that for every 1000 m3 you dispose in river you need to pay $100.</p>
 						<br />
 						<table>
 							<tr>
-								<td>Buy</td>
+								<td>购买</td>
 								<td class="btn-group">
 									<button onclick="refnumber('watertab3number', 1, 'watertab3number', 'watertab3total', 'coldwater', 'treatmentplantprice')" class="btn btn-info">1</button>
 									<button onclick="refnumber('watertab3number', 10, 'watertab3number', 'watertab3total', 'coldwater', 'treatmentplantprice')" class="btn btn-info">10</button>
@@ -635,7 +635,7 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								</td>
 							</tr>
 							<tr>
-								<td>Sell</td>
+								<td>出售</td>
 								<td class="btn-group">
 									<button onclick="refnumber('watertab3numbersell', 1, 'watertab3numbersell', 'watertab3totalsell', 'coldwater', 'treatmentplantprice')" class="btn btn-info">1</button>
 									<button onclick="refnumber('watertab3numbersell', 10, 'watertab3numbersell', 'watertab3totalsell', 'coldwater', 'treatmentplantprice')" class="btn btn-info">10</button>
@@ -648,21 +648,21 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						</table>
 						<table class="table">
 							<tr>
-								<th>Treatment plant</th>
-								<th>Price</th>
+								<th>处理厂</th>
+								<th>价格</th>
 								<th></th>
-								<th>Owned</th>
-								<th>Water treated</th>
-								<th>Total water treated</th>
-								<th>Operating cost</th>
-								<th>Total operating cost</th>
+								<th>拥有</th>
+								<th>水处理</th>
+								<th>总水处理</th>
+								<th>运营成本</th>
+								<th>总运营成本</th>
 							</tr>
 							<tr>
 								<td></td>
 								<td id="tab3tprice0"></td>
 								<td>
-									<button onclick="buy('coldwater', 'treatmentplant', watertab3number, 0)" class="btn btn-success">Buy <span id="watertab3number0"></span> - $<span id="watertab3total0"></span></button>
-									<button onclick="sell('coldwater', 'treatmentplant', watertab3numbersell, 0)" class="btn btn-danger">Sell <span id="watertab3numbersell0"></span> - $<span id="watertab3totalsell0"></span></button>
+									<button onclick="buy('coldwater', 'treatmentplant', watertab3number, 0)" class="btn btn-success">购买 <span id="watertab3number0"></span> - $<span id="watertab3total0"></span></button>
+									<button onclick="sell('coldwater', 'treatmentplant', watertab3numbersell, 0)" class="btn btn-danger">出售 <span id="watertab3numbersell0"></span> - $<span id="watertab3totalsell0"></span></button>
 								</td>
 								<td id="tab3towned0"></td>
 								<td id="tab3tprodu0"></td>
@@ -674,8 +674,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab3tprice1"></td>
 								<td>
-									<button onclick="buy('coldwater', 'treatmentplant', watertab3number, 1)" class="btn btn-success">Buy <span id="watertab3number1"></span> - $<span id="watertab3total1"></span></button>
-									<button onclick="sell('coldwater', 'treatmentplant', watertab3numbersell, 1)" class="btn btn-danger">Sell <span id="watertab3numbersell1"></span> - $<span id="watertab3totalsell1"></span></button>
+									<button onclick="buy('coldwater', 'treatmentplant', watertab3number, 1)" class="btn btn-success">购买 <span id="watertab3number1"></span> - $<span id="watertab3total1"></span></button>
+									<button onclick="sell('coldwater', 'treatmentplant', watertab3numbersell, 1)" class="btn btn-danger">出售 <span id="watertab3numbersell1"></span> - $<span id="watertab3totalsell1"></span></button>
 								</td>
 								<td id="tab3towned1"></td>
 								<td id="tab3tprodu1"></td>
@@ -687,8 +687,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab3tprice2"></td>
 								<td>
-									<button onclick="buy('coldwater', 'treatmentplant', watertab3number, 2)" class="btn btn-success">Buy <span id="watertab3number2"></span> - $<span id="watertab3total2"></span></button>
-									<button onclick="sell('coldwater', 'treatmentplant', watertab3numbersell, 2)" class="btn btn-danger">Sell <span id="watertab3numbersell2"></span> - $<span id="watertab3totalsell2"></span></button>
+									<button onclick="buy('coldwater', 'treatmentplant', watertab3number, 2)" class="btn btn-success">购买 <span id="watertab3number2"></span> - $<span id="watertab3total2"></span></button>
+									<button onclick="sell('coldwater', 'treatmentplant', watertab3numbersell, 2)" class="btn btn-danger">出售 <span id="watertab3numbersell2"></span> - $<span id="watertab3totalsell2"></span></button>
 								</td>
 								<td id="tab3towned2"></td>
 								<td id="tab3tprodu2"></td>
@@ -700,8 +700,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab3tprice3"></td>
 								<td>
-									<button onclick="buy('coldwater', 'treatmentplant', watertab3number, 3)" class="btn btn-success">Buy <span id="watertab3number3"></span> - $<span id="watertab3total3"></span></button>
-									<button onclick="sell('coldwater', 'treatmentplant', watertab3numbersell, 3)" class="btn btn-danger">Sell <span id="watertab3numbersell3"></span> - $<span id="watertab3totalsell3"></span></button>
+									<button onclick="buy('coldwater', 'treatmentplant', watertab3number, 3)" class="btn btn-success">购买 <span id="watertab3number3"></span> - $<span id="watertab3total3"></span></button>
+									<button onclick="sell('coldwater', 'treatmentplant', watertab3numbersell, 3)" class="btn btn-danger">出售 <span id="watertab3numbersell3"></span> - $<span id="watertab3totalsell3"></span></button>
 								</td>
 								<td id="tab3towned3"></td>
 								<td id="tab3tprodu3"></td>
@@ -712,10 +712,10 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						</table>
 					</div>
 					<div id="watertab4" class="tab-pane">
-						<p>Pipes are the most important thing for your company. Without them you can't supply people with water. They are the main source of money. Each pipe supplies 2 houses at a time.</p>
+						<p>管道是贵公司最重要的事情。 没有他们，你不能给人们提供水。 他们是钱的主要来源。 每个管道一次提供2个房屋。</p>
 						<table class="table">
 							<tr>
-								<td>Buy</td>
+								<td>购买</td>
 								<td class="btn-group">
 									<button onclick="refpipesnumber('watertab4buy', 'watertab4buyprice', 'coldwater', 0, 1, 'watertab4buynumber')" class="btn btn-info">1</button>
 									<button onclick="refpipesnumber('watertab4buy', 'watertab4buyprice', 'coldwater', 0, 10, 'watertab4buynumber')" class="btn btn-info">10</button>
@@ -726,7 +726,7 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								</td>
 							</tr>
 							<tr>
-								<td>Place</td>
+								<td>位置</td>
 								<td class="btn-group">
 									<button onclick="refpipesnumber('watertab4place', 'watertab4placeprice', 'coldwater', 1, 1, 'watertab4placenumber')" class="btn btn-info">1</button>
 									<button onclick="refpipesnumber('watertab4place', 'watertab4placeprice', 'coldwater', 1, 10, 'watertab4placenumber')" class="btn btn-info">10</button>
@@ -740,17 +740,17 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						<br />
 						<table class="table">
 							<tr>
-								<th colspan="4">Pipes</th>
+								<th colspan="4">管道</th>
 							</tr>
 							<tr>
-								<td>Owned</td>
+								<td>拥有</td>
 								<td id="watertab4owned"></td>
 								<td>Placed</td>
 								<td id="watertab4placed"></td>
 							</tr>
 							<tr>
-								<td colspan="2"><button onclick="buypipes(watertab4buynumber, 'coldwater', 0)" class="btn btn-success">Buy <span id="watertab4buy"></span> for $<span id="watertab4buyprice"></span></button></td>
-								<td colspan="2"><button onclick="buypipes(watertab4placenumber, 'coldwater', 1)" class="btn btn-success">Place <span id="watertab4place"></span> for $<span id="watertab4placeprice"></span></button></td>
+								<td colspan="2"><button onclick="buypipes(watertab4buynumber, 'coldwater', 0)" class="btn btn-success">购买 <span id="watertab4buy"></span> for $<span id="watertab4buyprice"></span></button></td>
+								<td colspan="2"><button onclick="buypipes(watertab4placenumber, 'coldwater', 1)" class="btn btn-success">位置 <span id="watertab4place"></span> for $<span id="watertab4placeprice"></span></button></td>
 							</tr>
 						</table>
 					</div>
@@ -758,15 +758,15 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 			</div>
 			<div id="tab4" class="tab-pane">
 				<ul class="nav nav-stacked" style="font-size: 17px;">
-					<li class="active"><a data-toggle="tab" href="#watertab5">Hot water pump</a></li>
-					<li><a data-toggle="tab" href="#watertab6">Hot water heating plant</a></li>
-					<li><a data-toggle="tab" href="#watertab7">Hot water pipes</a></li>
+					<li class="active"><a data-toggle="tab" href="#watertab5">热水泵</a></li>
+					<li><a data-toggle="tab" href="#watertab6">热水 供热厂</a></li>
+					<li><a data-toggle="tab" href="#watertab7">热水 pipes</a></li>
 				</ul>
 				<div class="tab-content">
 					<div id="watertab5" class="tab-pane active">
 						<table>
 							<tr>
-								<td>Buy</td>
+								<td>购买</td>
 								<td class="btn-group">
 									<button onclick="refnumber('watertab5number', 1, 'watertab5number', 'watertab5total', 'hotwater', 'pumpprice')" class="btn btn-info">1</button>
 									<button onclick="refnumber('watertab5number', 10, 'watertab5number', 'watertab5total', 'hotwater', 'pumpprice')" class="btn btn-info">10</button>
@@ -777,7 +777,7 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								</td>
 							</tr>
 							<tr>
-								<td>Sell</td>
+								<td>出售</td>
 								<td class="btn-group">
 									<button onclick="refnumber('watertab5numbersell', 1, 'watertab5numbersell', 'watertab5totalsell', 'hotwater', 'pumpprice')" class="btn btn-info">1</button>
 									<button onclick="refnumber('watertab5numbersell', 10, 'watertab5numbersell', 'watertab5totalsell', 'hotwater', 'pumpprice')" class="btn btn-info">10</button>
@@ -790,21 +790,21 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						</table>
 						<table class="table">
 							<tr>
-								<th>Pump</th>
-								<th>Price</th>
+								<th>水泵</th>
+								<th>价格</th>
 								<th></th>
-								<th>Owned</th>
-								<th>Production</th>
-								<th>Total production</th>
-								<th>Operating cost</th>
-								<th>Total operating cost</th>
+								<th>拥有</th>
+								<th>产量</th>
+								<th>总产量</th>
+								<th>运营成本</th>
+								<th>总运营成本</th>
 							</tr>
 							<tr>
 								<td></td>
 								<td id="tab5hpprice0"></td>
 								<td>
-									<button onclick="buy('hotwater', 'pump', watertab5number, 0)" class="btn btn-success">Buy <span id="watertab5number0"></span> - $<span id="watertab5total0"></span></button>
-									<button onclick="sell('hotwater', 'pump', watertab5numbersell, 0)" class="btn btn-danger">Sell <span id="watertab5numbersell0"></span> - $<span id="watertab5totalsell0"></span></button>
+									<button onclick="buy('hotwater', 'pump', watertab5number, 0)" class="btn btn-success">购买 <span id="watertab5number0"></span> - $<span id="watertab5total0"></span></button>
+									<button onclick="sell('hotwater', 'pump', watertab5numbersell, 0)" class="btn btn-danger">出售 <span id="watertab5numbersell0"></span> - $<span id="watertab5totalsell0"></span></button>
 								</td>
 								<td id="tab5hpowned0"></td>
 								<td id="tab5hpprodu0"></td>
@@ -816,8 +816,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab5hpprice1"></td>
 								<td>
-									<button onclick="buy('hotwater', 'pump', watertab5number, 1)" class="btn btn-success">Buy <span id="watertab5number1"></span> - $<span id="watertab5total1"></span></button>
-									<button onclick="sell('hotwater', 'pump', watertab5numbersell, 1)" class="btn btn-danger">Sell <span id="watertab5numbersell1"></span> - $<span id="watertab5totalsell1"></span></button>
+									<button onclick="buy('hotwater', 'pump', watertab5number, 1)" class="btn btn-success">购买 <span id="watertab5number1"></span> - $<span id="watertab5total1"></span></button>
+									<button onclick="sell('hotwater', 'pump', watertab5numbersell, 1)" class="btn btn-danger">出售 <span id="watertab5numbersell1"></span> - $<span id="watertab5totalsell1"></span></button>
 								</td>
 								<td id="tab5hpowned1"></td>
 								<td id="tab5hpprodu1"></td>
@@ -829,8 +829,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab5hpprice2"></td>
 								<td>
-									<button onclick="buy('hotwater', 'pump', watertab5number, 2)" class="btn btn-success">Buy <span id="watertab5number2"></span> - $<span id="watertab5total2"></span></button>
-									<button onclick="sell('hotwater', 'pump', watertab5numbersell, 2)" class="btn btn-danger">Sell <span id="watertab5numbersell2"></span> - $<span id="watertab5totalsell2"></span></button>
+									<button onclick="buy('hotwater', 'pump', watertab5number, 2)" class="btn btn-success">购买 <span id="watertab5number2"></span> - $<span id="watertab5total2"></span></button>
+									<button onclick="sell('hotwater', 'pump', watertab5numbersell, 2)" class="btn btn-danger">出售 <span id="watertab5numbersell2"></span> - $<span id="watertab5totalsell2"></span></button>
 								</td>
 								<td id="tab5hpowned2"></td>
 								<td id="tab5hpprodu2"></td>
@@ -842,8 +842,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab5hpprice3"></td>
 								<td>
-									<button onclick="buy('hotwater', 'pump', watertab5number, 3)" class="btn btn-success">Buy <span id="watertab5number3"></span> - $<span id="watertab5total3"></span></button>
-									<button onclick="sell('hotwater', 'pump', watertab5numbersell, 3)" class="btn btn-danger">Sell <span id="watertab5numbersell3"></span> - $<span id="watertab5totalsell3"></span></button>
+									<button onclick="buy('hotwater', 'pump', watertab5number, 3)" class="btn btn-success">购买 <span id="watertab5number3"></span> - $<span id="watertab5total3"></span></button>
+									<button onclick="sell('hotwater', 'pump', watertab5numbersell, 3)" class="btn btn-danger">出售 <span id="watertab5numbersell3"></span> - $<span id="watertab5totalsell3"></span></button>
 								</td>
 								<td id="tab5hpowned3"></td>
 								<td id="tab5hpprodu3"></td>
@@ -856,7 +856,7 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 					<div id="watertab6" class="tab-pane">
 						<table>
 							<tr>
-								<td>Buy</td>
+								<td>购买</td>
 								<td class="btn-group">
 									<button onclick="refnumber('watertab6number', 1, 'watertab6number', 'watertab6total', 'hotwater', 'heatingplantprice')" class="btn btn-info">1</button>
 									<button onclick="refnumber('watertab6number', 10, 'watertab6number', 'watertab6total', 'hotwater', 'heatingplantprice')" class="btn btn-info">10</button>
@@ -867,7 +867,7 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								</td>
 							</tr>
 							<tr>
-								<td>Sell</td>
+								<td>出售</td>
 								<td class="btn-group">
 									<button onclick="refnumber('watertab6numbersell', 1, 'watertab6numbersell', 'watertab6totalsell', 'hotwater', 'heatingplantprice')" class="btn btn-info">1</button>
 									<button onclick="refnumber('watertab6numbersell', 10, 'watertab6numbersell', 'watertab6totalsell', 'hotwater', 'heatingplantprice')" class="btn btn-info">10</button>
@@ -880,21 +880,21 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						</table>
 						<table class="table">
 							<tr>
-								<th>Heating plant</th>
-								<th>Price</th>
+								<th>供热厂</th>
+								<th>价格</th>
 								<th></th>
-								<th>Owned</th>
-								<th>Production</th>
-								<th>Total production</th>
-								<th>Operating cost</th>
-								<th>Total operating cost</th>
+								<th>拥有</th>
+								<th>产量</th>
+								<th>总产量</th>
+								<th>运营成本</th>
+								<th>总营运成本</th>
 							</tr>
 							<tr>
 								<td></td>
 								<td id="tab6hpprice0"></td>
 								<td>
-									<button onclick="buy('hotwater', 'heatingplant', watertab6number, 0)" class="btn btn-success">Buy <span id="watertab6number0"></span> - $<span id="watertab6total0"></span></button>
-									<button onclick="sell('hotwater', 'heatingplant', watertab6numbersell, 0)" class="btn btn-danger">Buy <span id="watertab6numbersell0"></span> - $<span id="watertab6totalsell0"></span></button>
+									<button onclick="buy('hotwater', 'heatingplant', watertab6number, 0)" class="btn btn-success">购买 <span id="watertab6number0"></span> - $<span id="watertab6total0"></span></button>
+									<button onclick="sell('hotwater', 'heatingplant', watertab6numbersell, 0)" class="btn btn-danger">购买 <span id="watertab6numbersell0"></span> - $<span id="watertab6totalsell0"></span></button>
 								</td>
 								<td id="tab6hpowned0"></td>
 								<td id="tab6hpprodu0"></td>
@@ -906,8 +906,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab6hpprice1"></td>
 								<td>
-									<button onclick="buy('hotwater', 'heatingplant', watertab6number, 1)" class="btn btn-success">Buy <span id="watertab6number1"></span> - $<span id="watertab6total1"></span></button>
-									<button onclick="sell('hotwater', 'heatingplant', watertab6numbersell, 1)" class="btn btn-danger">Sell <span id="watertab6numbersell1"></span> - $<span id="watertab6totalsell1"></span></button>
+									<button onclick="buy('hotwater', 'heatingplant', watertab6number, 1)" class="btn btn-success">购买 <span id="watertab6number1"></span> - $<span id="watertab6total1"></span></button>
+									<button onclick="sell('hotwater', 'heatingplant', watertab6numbersell, 1)" class="btn btn-danger">出售 <span id="watertab6numbersell1"></span> - $<span id="watertab6totalsell1"></span></button>
 								</td>
 								<td id="tab6hpowned1"></td>
 								<td id="tab6hpprodu1"></td>
@@ -919,8 +919,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab6hpprice2"></td>
 								<td>
-									<button onclick="buy('hotwater', 'heatingplant', watertab6number, 2)" class="btn btn-success">Buy <span id="watertab6number2"></span> - $<span id="watertab6total2"></span></button>
-									<button onclick="sell('hotwater', 'heatingplant', watertab6numbersell, 2)" class="btn btn-danger">Sell <span id="watertab6numbersell2"></span> - $<span id="watertab6totalsell2"></span></button>
+									<button onclick="buy('hotwater', 'heatingplant', watertab6number, 2)" class="btn btn-success">购买 <span id="watertab6number2"></span> - $<span id="watertab6total2"></span></button>
+									<button onclick="sell('hotwater', 'heatingplant', watertab6numbersell, 2)" class="btn btn-danger">出售 <span id="watertab6numbersell2"></span> - $<span id="watertab6totalsell2"></span></button>
 								</td>
 								<td id="tab6hpowned2"></td>
 								<td id="tab6hpprodu2"></td>
@@ -932,8 +932,8 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<td></td>
 								<td id="tab6hpprice3"></td>
 								<td>
-									<button onclick="buy('hotwater', 'heatingplant', watertab6number, 3)" class="btn btn-success">Buy <span id="watertab6number3"></span> - $<span id="watertab6total3"></span></button>
-									<button onclick="sell('hotwater', 'heatingplant', watertab6numbersell, 3)" class="btn btn-danger">Sell <span id="watertab6numbersell3"></span> - $<span id="watertab6totalsell3"></span></button>
+									<button onclick="buy('hotwater', 'heatingplant', watertab6number, 3)" class="btn btn-success">购买 <span id="watertab6number3"></span> - $<span id="watertab6total3"></span></button>
+									<button onclick="sell('hotwater', 'heatingplant', watertab6numbersell, 3)" class="btn btn-danger">出售 <span id="watertab6numbersell3"></span> - $<span id="watertab6totalsell3"></span></button>
 								</td>
 								<td id="tab6hpowned3"></td>
 								<td id="tab6hpprodu3"></td>
@@ -947,7 +947,7 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 						<p>Pipes are the most important thing for your company. Without them you can't supply people with water. They are the main source of money. Each pipe supplies 2 houses at a time.</p>
 						<table class="table">
 							<tr>
-								<td>Buy</td>
+								<td>购买</td>
 								<td class="btn-group">
 									<button onclick="refpipesnumber('watertab7buy', 'watertab7buyprice', 'hotwater', 0, 1, 'watertab7buynumber')" class="btn btn-info">1</button>
 									<button onclick="refpipesnumber('watertab7buy', 'watertab7buyprice', 'hotwater', 0, 10, 'watertab7buynumber')" class="btn btn-info">10</button>
@@ -975,13 +975,13 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 								<th colspan="4">Pipes</th>
 							</tr>
 							<tr>
-								<td>Owned</td>
+								<td>拥有</td>
 								<td id="watertab7owned"></td>
 								<td>Placed</td>
 								<td id="watertab7placed"></td>
 							</tr>
 							<tr>
-								<td colspan="2"><button onclick="buypipes(watertab7buynumber, 'hotwater', 0)" class="btn btn-success">Buy <span id="watertab7buy"></span> for $<span id="watertab7buyprice"></span></button></td>
+								<td colspan="2"><button onclick="buypipes(watertab7buynumber, 'hotwater', 0)" class="btn btn-success">购买 <span id="watertab7buy"></span> for $<span id="watertab7buyprice"></span></button></td>
 								<td colspan="2"><button onclick="buypipes(watertab7placenumber, 'hotwater', 1)" class="btn btn-success">Place <span id="watertab7place"></span> for $<span id="watertab7placeprice"></span></button></td>
 							</tr>
 						</table>
@@ -991,19 +991,19 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 			<div id="tab5" class="tab-pane">
 				<table class="table">
 					<tr>
-						<td>Loan</td>
+						<td>贷款</td>
 						<td id="tab5loan"></td>
-						<td>Loan interest</td>
+						<td>贷款利息</td>
 						<td id="tab5loaninterest"></td>
 					</tr>
 					<tr>
-						<td>Max loan</td>
+						<td>最大贷款</td>
 						<td id="tab5maxloan"></td>
 					</tr>
 					<tr>
-						<td>Bank balance</td>
+						<td>银行账户余额</td>
 						<td id="tab5balance"></td>
-						<td>Bank account interst</td>
+						<td>银行账户利息</td>
 						<td id="tab5balanceinterest"></td>
 					</tr>
 				</table>
@@ -1011,25 +1011,25 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 					<tr>
 						<td><input style="width: 80px;" class="form-control" onkeyup="var a=document.getElementById('tab5bankbalanceout').value; if(Number(a)>0){id2w('tab5bankbalanceoutnumber', sn2(a)); window['tab5bankbalanceoutnumber'] = a;}" id="tab5bankbalanceout"/></td>
 						<td class="btn-group">
-							<button onclick="Bank(1, 1, tab5bankbalanceoutnumber)" class="btn btn-info">Withdraw $<span id="tab5bankbalanceoutnumber"></span></button>
-							<button onclick="Bank(1, 1, game.bank.balance)" class="btn btn-info">Withdraw max</button>
+							<button onclick="Bank(1, 1, tab5bankbalanceoutnumber)" class="btn btn-info">收回 $<span id="tab5bankbalanceoutnumber"></span></button>
+							<button onclick="Bank(1, 1, game.bank.balance)" class="btn btn-info">全部收回</button>
 						</td>
 						<td><input style="width: 80px;" class="form-control" onkeyup="var a=document.getElementById('tab5bankbalancein').value; if(Number(a)>0){id2w('tab5bankbalanceinnumber', sn2(a)); window['tab5bankbalanceinnumber'] = a;}" id="tab5bankbalancein"/></td>
 						<td class="btn-group">
-							<button onclick="Bank(1, 0, tab5bankbalanceinnumber)" class="btn btn-info">Invest $<span id="tab5bankbalanceinnumber"></span></button>
-							<button onclick="Bank(1, 0, game.bank.money)" class="btn btn-info">Invest max</button>
+							<button onclick="Bank(1, 0, tab5bankbalanceinnumber)" class="btn btn-info">投资 $<span id="tab5bankbalanceinnumber"></span></button>
+							<button onclick="Bank(1, 0, game.bank.money)" class="btn btn-info">全部投资</button>
 						</td>
 					</tr>
 					<tr>
 						<td><input style="width: 80px;" class="form-control" onkeyup="var a=document.getElementById('tab5loanout').value; if(Number(a)>0){id2w('tab5loanoutnumber', sn2(a)); window['tab5loanoutnumber'] = a;}" id="tab5loanout"/></td>
 						<td class="btn-group">
-							<button onclick="Bank(0, 1, tab5loanoutnumber)" class="btn btn-info">Get $<span id="tab5loanoutnumber"></span></button>
-							<button onclick="Bank(0, 1, game.bank.maxloan-game.bank.loan)" class="btn btn-info">Get max</button>
+							<button onclick="Bank(0, 1, tab5loanoutnumber)" class="btn btn-info">获取 $<span id="tab5loanoutnumber"></span></button>
+							<button onclick="Bank(0, 1, game.bank.maxloan-game.bank.loan)" class="btn btn-info">全部获取</button>
 						</td>
 						<td><input style="width: 80px;" class="form-control" onkeyup="var a=document.getElementById('tab5loanin').value; if(Number(a)>0){id2w('tab5loaninnumber', sn2(a)); window['tab5loaninnumber'] = a;}" id="tab5loanin"/></td>
 						<td class="btn-group">
-							<button onclick="Bank(0, 0, tab5loaninnumber)" class="btn btn-info">Return $<span id="tab5loaninnumber"></span></button>
-							<button onclick="if(game.bank.loan>game.bank.money){Bank(0, 0, game.bank.money)}else{Bank(0, 0, game.bank.loan)}" class="btn btn-info">Return max</button>
+							<button onclick="Bank(0, 0, tab5loaninnumber)" class="btn btn-info">还款 $<span id="tab5loaninnumber"></span></button>
+							<button onclick="if(game.bank.loan>game.bank.money){Bank(0, 0, game.bank.money)}else{Bank(0, 0, game.bank.loan)}" class="btn btn-info">全部归还</button>
 						</td>
 					
 					</tr>
@@ -1040,42 +1040,42 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 				<center><h2>Profit statment</h2></center>
 				<table class="table table-bordered">
 					<tr>
-						<th colspan="2"><center>Daily income</center></th>
-						<th colspan="2"><center>Daily expenditure</center></th>
+						<th colspan="2"><center>每日收入</center></th>
+						<th colspan="2"><center>每日支出</center></th>
 					</tr>
 					<tr>
-						<td>Selling cold water</td>
+						<td>出售冷水</td>
 						<td id="finsellcoldwater"></td>
-						<td>Cold water utilities</td>
+						<td>冷水设施</td>
 						<td id="fincoldwaterexp"></td>
 					</tr>
 					<tr>
-						<td>Selling hot water</td>
+						<td>出售热水</td>
 						<td id="finsellhotwater"></td>
-						<td>Hot water utilities</td>
+						<td>热水设施</td>
 						<td id="finhotwaterexp"></td>
 					</tr>
 					<tr>
-						<td>Interest</td>
+						<td>利息</td>
 						<td id="finintbank"></td>
-						<td>Fines</td>
+						<td>罚款</td>
 						<td id="finfines"></td>
 					</tr>
 					<tr>
-						<th>Total income</th>
+						<th>总收入</th>
 						<th id="fintotwaterinc"></th>
-						<th>Total expenditure</th>
+						<th>总支出</th>
 						<th id="fintotwaterexp"></th>
 					</tr>
 					<tr>
-						<th colspan="2">Profit</th>
+						<th colspan="2">利润</th>
 						<th colspan="2" id="profit"></th>
 					</tr>
 				</table>
 			</div>
 			<div id="tab7" class="tab-pane" style="height: auto;">
 				<h3 class="text">Frequently Asked Questions</h3>
-				<h4>Why do I have one hot water pipe placed from the beginnings?</h4>
+				<h4>Why do I have one 热水 pipe placed from the beginnings?</h4>
 				<p>If there weren't, that will cause a mess in the code because of an infinite loop and that is easier for me :P</p>
 				<br>
 				</br>
@@ -1090,13 +1090,13 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 				<br>
 				</br>
 				<hr />
-				<h4>Why do I need treatment plant and what will happen if I don't have?</h4>
-				<p>The treatment plant cleans the water from sewage. If you let not treated water to the river, you will pay a fine of $1000 for every 10000m<sup>3</sup> not treated water.</p>
+				<h4>Why do I need处理厂 and what will happen if I don't have?</h4>
+				<p>The处理厂 cleans the water from sewage. If you let not treated water to the river, you will pay a fine of $1000 for every 10000m<sup>3</sup> not treated water.</p>
 				<br>
 				</br>
 				<hr />
 				<h4>What will happen if I can't supply enough water?</h4>
-				<p>Simply people will pay for the water you supplied. If you supply 10m<sup>3</sup>, but they need 20m<sup>3</sup>, people will pay for 10m<sup>3</sup> only.</p>
+				<p>Simply people will pay for the water you供应. If you supply 10m<sup>3</sup>, but they need 20m<sup>3</sup>, people will pay for 10m<sup>3</sup> only.</p>
 				<br>
 				</br>
 				<hr />
@@ -1106,7 +1106,7 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 				</br>
 				<hr />
 				<h4>I want to get x money via loan, but I can't. Why?</h4>
-				<p>You can't have a loan bigger than 100k. It can go higher if you don't have enough money to pay the tax.</p>
+				<p>You can't have a loan 大ger than 100k. It can go higher if you don't have enough money to pay the tax.</p>
 				<br>
 				</br>
 				<hr />
@@ -1115,20 +1115,20 @@ swal('Nice!', 'You city is called: ' + inputValue + '.');game.city.name = inputV
 				<br>
 				</br>
 				<hr />
-				<h4>How are operating costs calculated?</h4>
-				<p>Everything has an operating cost(except pipes). Even if you don't use it or you use it very little, the operating cost won't change.</p>
+				<h4>How are 运营成本s calculated?</h4>
+				<p>Everything has an 运营成本(except pipes). Even if you don't use it or you use it very little, the 运营成本 won't change.</p>
 				<br>
 				</br>
 			</div>
 			<div id="tab8" class="tab-pane">
-				<h3>Basic tutorial</h3>
-				<p>You start with 10 placed pipes for cold water. Each pipe can suply 2 houses. Each house requeres 2m<sup>3</sup> water(if you havent bought the upgrade for increasing the required water in upgrades tab > houses). So you need to suply 10*2*2 = 40m<sup>3</sup> per ingame hour. With your pump, you pump 100m<sup>3</sup> per ingame hour, so they have enough water. You can suply more houses by buying and placing more pipes. That is good, but after some time your income will not go up. Why? You can't suply enoug water. You need to buy another pump. But then you see in finance tab there is fines. What is that thing? Why am I getting fined? You suply people with water, but your treatment plant can't treate all the water. The untreated water is send back in river and it is polluting it. How to fix this? Buy a treatment plant. A note: treatment plants have double the price of a pump and double operating costs compared to a pump.</p>
+				<h3>基础教程</h3>
+				<p>你从10放置管道冷水开始。 每个管道可以超过2个房屋。 每个房屋需要2m <sup> 3 </sup>水（如果您没有购买升级升级选项卡>房屋所需的水）。 所以你需要超过10 * 2 * 2 = 40m <sup> 3 </sup>每个游戏时间。 用你的泵，你每个游泳小时泵100米<sup> 3 </sup>，所以他们有足够的水。 您可以通过购买和放置更多的管道来获得更多的房屋。 那很好，但过了一段时间后，你的收入就不会上涨。 为什么？ 你不能淹没水。 你需要买另一个泵。 但是，您在财务标签中看到有罚款。 那是什么东西？ 为什么我被罚款？ 你倚靠人们的水，但你的处理厂不能处理所有的水。 未经处理的水在河里发回，污染它。 如何解决这个问题？ 买一个处理厂。 注意事项：与泵相比，处理厂的泵价格是双倍的，双重运行成本。</p>
 			</div>
 			<div id="tab9" class="tab-pane">
-				The game is autosaved every ingame day.
+				游戏会在每天结束的时候保存。
 				<script>reset = 0;</script>
-				<button class="btn btn-success" onclick="localStorage.setItem('save', JSON.stringify(game))">Save</button>
-				<button class="btn btn-danger" onclick="reset = reset + 1; if(reset>=3){localStorage.setItem('save', ''); location.reload();}">Reset game</button>
+				<button class="btn btn-success" onclick="localStorage.setItem('save', JSON.stringify(game))">保存</button>
+				<button class="btn btn-danger" onclick="reset = reset + 1; if(reset>=3){localStorage.setItem('save', ''); location.reload();}">重置游戏</button>
 			</div>
 			<div id="tab10" class="tab-pane"></div>
 		</div>

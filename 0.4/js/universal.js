@@ -12,7 +12,7 @@ function buypipes(count, water, tier){
 				refpipes();
 			}
 			else{
-				Error("Money printer broken", "Not enough money.");
+				Error("钱打印机坏了", "没有足够的资金。");
 			}
 		}
 		else{
@@ -32,7 +32,7 @@ function buypipes(count, water, tier){
 			}
 		}
 		else{
-			Error("Money printer broken", "Not enough money.");
+			Error("钱打印机坏了", "没有足够的资金。");
 		}
 	}	
 	refreshcity();
@@ -63,7 +63,7 @@ function upgrade(where, what, multiplier, price, pricemultiplier, number){
 		id2w("money", sn2(game.bank.money));
 	}
 	else{
-		Error("Money printer broken", "Not enough money.");
+		Error("钱打印机坏了", "没有足够的资金。");
 	}
 	refreshupgrades();
 	refreshwater();
@@ -79,7 +79,7 @@ function buy(water, thing, number, tier){
 		refreshcity();
 	}
 	else{
-		Error("Money printer broken", "Not enough money.");
+		Error("钱打印机坏了", "没有足够的资金。");
 	}
 }
 function sell(water, thing, number, tier){
@@ -109,7 +109,7 @@ function decpipeprice(a, b, c){
 		refpipesnumber('watertab7place', 'watertab7placeprice', 'hotwater', 1, watertab7placenumber, 'watertab7placenumber');
 	}
 	else{
-		Error("Money printer broken", "Not enough money.");
+		Error("钱打印机坏了", "没有足够的资金。");
 	}
 }
 
@@ -118,7 +118,7 @@ function Error(title1, text1){
 		title: title1,
 		text: text1,
 		type: "error",
-		confirmButtonText: "Okay"
+		confirmButtonText: "确定"
 	})
 }
 function increaseinterest(){
@@ -133,7 +133,7 @@ function increaseinterest(){
 			refreshcity();
 		}
 		else{
-			Error("Money printer broken", "Not enough money.");
+			Error("钱打印机坏了", "没有足够的资金。");
 		}
 	}
 	refreshupgrades();
@@ -157,7 +157,7 @@ function increasepopincrease() {
 		}
 	}
 	else{
-		Error("Money printer broken", "Not enough money.");
+		Error("钱打印机坏了", "没有足够的资金。");
 	}
 }
 function increasemaxloan(){
@@ -174,7 +174,7 @@ function increasemaxloan(){
 			refreshcity();
 		}
 		else{
-			Error("Money printer broken", "Not enough money.");
+			Error("钱打印机坏了", "没有足够的资金。");
 		}
 	}
 }
