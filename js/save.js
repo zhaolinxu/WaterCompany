@@ -77,7 +77,7 @@ function chechSaveFile() {
 		HPOprice = heatWater[10];
 		HPPprice = heatWater[11];
 		
-		Alert("You can try version 0.4. Just click <a target='_blank' href='https://dimitar5555.github.io/WaterCompany/0.4/'>here</a>.");
+		Alert("点<a target='_blank' href='https://zhaolinxu.github.io/WaterCompany/0.4/'>这里</a>玩最新的0.4版。");
 		
 		formatNumber = localStorage.number;
 		var time = localStorage.offTime;

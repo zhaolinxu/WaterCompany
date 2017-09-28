@@ -1,7 +1,14 @@
-# WaterCompany
-## Change log
+# 自来水公司
 
-#### [Version 0.4](https://dimitar5555.github.io/WaterCompany/0.4)
+- 中文版 (0.4)：https://zhaolinxu.github.io/WaterCompany/0.4/
+- 英文版 (0.4)：https://dimitar5555.github.io/WaterCompany/0.4/
+
+- 中文版 (0.3.4.1 Beta)：https://zhaolinxu.github.io/WaterCompany/
+- 英文版 (0.3.4.1 Beta)：https://dimitar5555.github.io/WaterCompany/
+
+## 更新日志
+
+### V 0.4
 
 * Changed background to gradient
 * Redone javascript functions

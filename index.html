@@ -116,19 +116,19 @@ counter"></a></div></noscript>
 	</head>
 	<body style="padding: 5px; max-width: 1300px; margin: 0 auto;" onload="gEBI('fgg').click();chechSaveFile();">
 	<div>
-		<span id="logo" style="font-size: 40px; font-family: Arial;	color: #0059ff; font-weight: bold;">Water Company</span><span class="text-muted">version 0.3.4.1 Beta - 8 June 2017</span>
+		<span id="logo" style="font-size: 40px; font-family: Arial;	color: #0059ff; font-weight: bold;">自来水公司</span><span class="text-muted">版本 0.3.4.1 Beta - 2017年7月8日 </span>
 		<div style="float: right; margin-bottom: 5px; width: 180px;">
-		<pre><span style="font-size: 30px;">Day:<span id="date"></span></span>
+		<pre><span style="font-size: 30px;">天:<span id="date"></span></span>
 <span id="time" style="font-size: 50px;"></span>
-Year: <span id="year"></span>
-Month: <span id="month"></span></pre></div>
+年: <span id="year"></span>
+月: <span id="month"></span></pre></div>
 		<br />
 		
 	</div>
 	
 		<table class="table" style="width: 950px; display: table;">
 			<tr>
-				<td>Money</td>
+				<td>资金</td>
 				<td>$<span id="money"></span> <span id="income"></span></td>
 				<td id="warnAll" style="white-space: nowrap; "><span id="percentBankUpper"></span>% of the profits are transfered to the bank account</td>
 				<td id="weather" style="font-size: 20px; max-height: 350px; " class="bg-primary">
@@ -138,15 +138,15 @@ Weather today:<span id="wtod"></span>
 		</table>
 		<table class="table" style="width: 950px; display: table;">
 			<tr>
-				<th colspan="4">Cold water</th>
-				<th colspan="4">Hot water</th>
+				<th colspan="4">冷水</th>
+				<th colspan="4">热水</th>
 			</tr>
 			<tr>
 				<td>Water Pumped</td>
 				<td><span id="prd"></span> m<sup>3</sup></td>
 				<td>Water Treated</td>
 				<td><span id="trt"></span> m<sup>3</sup></td>
-				<td>Hot water pumped</td>
+				<td>热水 pumped</td>
 				<td id="HWpumped"></td>
 				<td>Water heated</td>
 				<td id="HWheated"></td>
@@ -156,7 +156,7 @@ Weather today:<span id="wtod"></span>
 				<td><span id="NW"></span> m<sup>3</sup></td>
 				<td>Extra water</td>
 				<td><span id="extraW"></span> m<sup>3</sup></td>
-				<td>Hot water used</td>
+				<td>热水 used</td>
 				<td id="HWusage"></td>
 			</tr>
 			<tr>
@@ -170,7 +170,7 @@ Weather today:<span id="wtod"></span>
 			<li class="active"><a data-toggle="pill" href="#tabs-1" id="fgg">City</a></li>
 			<li><a data-toggle="pill" href="#tabs-2">Upgrades</a></li>
 			<li><a data-toggle="pill" href="#tabs-3">Water</a></li>
-			<li><a data-toggle="pill" href="#tabs-13">Hot water</a></li>
+			<li><a data-toggle="pill" href="#tabs-13">热水</a></li>
 			<li><a data-toggle="pill" href="#tabs-6">Bank</a></li>
 			<li><a data-toggle="pill" href="#tabs-8">FAQ</a></li>
 			<li><a data-toggle="pill" href="#tabs-9">Finance</a></li>
@@ -212,7 +212,7 @@ Weather today:<span id="wtod"></span>
 		<br />
 				<ul class="nav nav-stacked col-xs-2" style="font-size: 17px;">
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Cold water<span class="caret"></span></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">冷水<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a data-toggle="tab" href="#upgradestabs1">Pumps</a></li>
 							<li><a data-toggle="tab" href="#upgradestabs2">Treatment plants</a></li>
@@ -221,7 +221,7 @@ Weather today:<span id="wtod"></span>
 						</ul>
 					</li>
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Hot water<span class="caret"></span></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">热水<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a data-toggle="tab" href="#upgradestabs7">Pumps</a></li>
 							<li><a data-toggle="tab" href="#upgradestabs8">Heating plants</a></li>
@@ -323,11 +323,11 @@ Weather today:<span id="wtod"></span>
 							<td><button class="btn btn-primary" onclick="IncWaterNeeded();">Increase</button></td>
 						</tr>
 						<tr>
-							<td>Increase price of cold water by 5% - $<span id="IncPP"></span><br />
+							<td>Increase price of 冷水 by 5% - $<span id="IncPP"></span><br />
 							$<span id="priceBefore"></span> -> $<span id="priceAfter"></span>
 							</td>
 							<td><button class="btn btn-primary" onclick="IncWaterPrice();">Increase</button></td>
-							<td>Increase price of hot water by 5% - $<span id="priceIncHW"></span><br />
+							<td>Increase price of 热水 by 5% - $<span id="priceIncHW"></span><br />
 							$<span id="BpHW"></span>->$<span id="ApHW"></span>
 							</td>
 							<td><button class="btn btn-primary" onclick="incHWprice()">Increase</button></td>
@@ -998,7 +998,7 @@ Weather today:<span id="wtod"></span>
 			<ul>
 				<li>Fixed bug: not loading data from the new update correctly</li>
 				<li>Fixed bug: autobuy functions</li>
-				<li>Fixed bug: custom number inputs in hot water tab not working</li>
+				<li>Fixed bug: custom number inputs in 热水 tab not working</li>
 				<li>Fixed bug: upgrade tabs weren't clickable on Kongregate</li>
 				<li>Changed postion of the weather bar(what do you think?)</li>
 				<li>Optimized game loading speed</li>
@@ -1374,7 +1374,7 @@ Weather today:<span id="wtod"></span>
 					</table>
 				</div>
 				<div id="Htabs4" class="tab-pane">
-					<p>Heat pipes are special pipes. They are insulated and more thicker so they don't melt and the water doesn't cool down so fast. They are also much more expensive. They treansport the hot water to homes from the CPP.</p>
+					<p>Heat pipes are special pipes. They are insulated and more thicker so they don't melt and the water doesn't cool down so fast. They are also much more expensive. They treansport the 热水 to homes from the CPP.</p>
 					<table>
 						<tr>
 							<td>Buy</td>
@@ -1439,9 +1439,9 @@ Weather today:<span id="wtod"></span>
 					<button class="btn btn-primary" onclick="buyHpipes(buyHpipesNumber);">Buy <span id="buyHpipes"></span> for <span id="buyHpipesPrice"></span></button>
 					<button class="btn btn-primary" onclick="placeHpipes(placeHpipesNumber);">Place <span id="placeHpipes"></span> for <span id="placeHpipesPrice"></span></button>
 					<br />
-					<button class="btn btn-primary" id="maxHBPButton">Buy <span id="maxHBP"></span> hot water pipes</button>
-					<button class="btn btn-primary" id="maxHPPButton">Place <span id="maxHPP"></span> hot water pipes</button>
-					<button class="btn btn-primary" id="maxHPBPButton">Buy & place <span id="maxHPBP"></span> hot water pipes</button>
+					<button class="btn btn-primary" id="maxHBPButton">Buy <span id="maxHBP"></span> 热水 pipes</button>
+					<button class="btn btn-primary" id="maxHPPButton">Place <span id="maxHPP"></span> 热水 pipes</button>
+					<button class="btn btn-primary" id="maxHPBPButton">Buy & place <span id="maxHPBP"></span> 热水 pipes</button>
 				</div>
 			</div>
 		</div>
