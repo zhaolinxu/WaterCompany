@@ -16,7 +16,7 @@ function buypipes(count, water, tier){
 			}
 		}
 		else{
-			Error("Cloning machine broken", "Not enough houses in the city.");
+			Error("克隆机破碎", "城市没有足够的房子。");
 		}
 	}
 	else{
@@ -28,7 +28,7 @@ function buypipes(count, water, tier){
 				refpipes();
 			}
 			else{
-				Error("China plastic production shortage", "Not enough owned pipes.");
+				Error("中国塑料生产短缺", "没有足够的管道。");
 			}
 		}
 		else{
@@ -92,7 +92,7 @@ function sell(water, thing, number, tier){
 		id2w("money", sn2(game.bank.money));
 	}
 	else{
-		Error("IRS audit", "Not enough utilites to sell.");
+		Error("国税局审计", "没有足够的电力公司出售。");
 	}
 }
 //water, price name, tier
@@ -153,7 +153,7 @@ function increasepopincrease() {
 			refreshcity();
 		}
 		else{
-			Error("Green activists problems", "You can't upgrade more the population increase rate.");
+			Error("环保人士的问题", "您无法升级更多的人口增长率。");
 		}
 	}
 	else{
@@ -162,7 +162,7 @@ function increasepopincrease() {
 }
 function increasemaxloan(){
 	if(game.bank.loan>0){
-		Error('Cheat detected', 'You can not increase max loan size if you are in debt');
+		Error('作弊检测', '如果您有债务，您不能增加最大贷款额度');
 	}
 	else{
 		if(game.bank.money>=game.upgrades.increase.maxloan){
